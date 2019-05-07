@@ -1,0 +1,9 @@
+➜  Eventbrite git:(master) ✗ rails new EB -d postgresql
+➜  Eventbrite git:(master) ✗ rails generate scaffold_controller Users
+➜  Eventbrite git:(master) ✗ rails g model User description:text first_name:string last_name:string
+➜  Eventbrite git:(master) ✗ rails generate scaffold_controller Event
+➜  Eventbrite git:(master) ✗ rails g model Event start_date:datetime duration:integer title:string description:text price:integer location:string
+➜  Eventbrite git:(master) ✗  rails generate scaffold_controller Attendance
+➜  Eventbrite git:(master) ✗ rails g model Attendance stripe_customer_id:string
+➜  Eventbrite git:(master) ✗ rails g migration CreateJoinTable user event
+➜  Eventbrite git:(master) ✗ rails g mailer UserMailer

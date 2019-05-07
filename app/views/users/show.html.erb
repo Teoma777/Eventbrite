@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @user.first_name  %> <%= @user.last_name %></h1>
+
+
+<p>Description : <%= @user.description %></p>
+<p>Membre depuis le <%= @user.created_at %></p>
+<%= %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
